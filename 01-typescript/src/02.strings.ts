@@ -1,6 +1,7 @@
 (() => {
     const name: string = 'Guille'
     const lastname: unknown = Math.PI
+    console.log(typeof lastname === 'string' && lastname.toLowerCase())
     const profession: string = 'Ing. en sistemas de información'
     let languages: any = "Typescript"
     const guille: unknown = {}
@@ -16,7 +17,7 @@
     
     try {
         // error al no poder verificar la propiedad
-        console.log("guille.name", guille.name)
+        console.log("guille.name", guille)
     } catch (e) {
         console.error((e as string).toLowerCase())
         console.log('error', e)
