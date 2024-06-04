@@ -11,7 +11,7 @@ import { useFilterCharacters } from '../hooks/useFilterStrategy'
 export const Characters= () => {
     const [characters, setCharacters] = React.useState<CharacterProps[]>([])
     const [loading, setLoading] = React.useState<boolean>(true)
-    const {filteredCharacters, changeFilterStrategy}  = useFilterCharacters(characters)
+    const {filteredCharacters, changeFilterStrategy}  = useFilterCharacters(characters) // sirve para filtro en memoria
     React.useEffect(() => {
         const fetch = async () => {
             try {
