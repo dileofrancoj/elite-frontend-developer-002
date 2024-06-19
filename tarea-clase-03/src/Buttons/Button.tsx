@@ -50,7 +50,7 @@ interface ButtonFactoryProps {
     children: React.ReactNode
 }
 
-export const ButtonFactory: React.FC<ButtonFactoryProps> = ({ buttonType, children, ...props }) => {
+export const ButtonFactory: React.FC<ButtonFactoryProps & ButtonProps> = ({ buttonType, children, ...props }) => {
 
     const buttonComponents: { [key in ButtonType]: Button } = {
         'basic': BasicButton,
