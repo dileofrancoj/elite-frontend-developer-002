@@ -1,9 +1,12 @@
+import { ErrorBoundary } from '@sentry/react'
 import './App.css'
 import { Characters } from './Characters'
 
 function App() {
   return (
-   <Characters />
+    <ErrorBoundary>
+      <Characters />
+    </ErrorBoundary>
   )
 }
 
